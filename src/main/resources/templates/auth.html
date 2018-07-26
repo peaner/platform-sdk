@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>进入授权</title>
+</head>
+<body>
+    <h3>进入授权</h3>
+    <a th:href="${redirectUrl}">授权</a>
+
+    <!--[if lt IE 9]>
+    <script th:src="@{/static/javascript/plugin/respond.min.js}"></script>
+    <script th:src="@{/static/javascript/plugin/excanvas.min.js}"></script>
+    <script th:src="@{/static/javascript/plugin/ie8.fix.min.js}"></script>
+    <![endif]-->
+    <!-- BEGIN CORE PLUGINS -->
+    <script th:src="@{/static/javascript/plugin/jquery.min.js}" type="text/javascript"></script>
+    <script th:src="@{/static/javascript/plugin/bootstrap/js/bootstrap.min.js}" type="text/javascript"></script>
+    <script th:src="@{/static/javascript/plugin/js.cookie.min.js}" type="text/javascript"></script>
+    <script th:src="@{/static/javascript/plugin/jquery-slimscroll/jquery.slimscroll.min.js}" type="text/javascript"></script>
+    <script th:src="@{/static/javascript/plugin/jquery.blockui.min.js}" type="text/javascript"></script>
+    <script th:src="@{/static/javascript/plugin/bootstrap-switch/js/bootstrap-switch.min.js}" type="text/javascript"></script>
+    <!-- END CORE PLUGINS -->
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <script th:src="@{/static/javascript/plugin/jquery-validation/js/jquery.validate.min.js}" type="text/javascript"></script>
+    <script th:src="@{/static/javascript/plugin/jquery-validation/js/additional-methods.min.js}" type="text/javascript"></script>
+    <script th:src="@{/static/javascript/plugin/select2/js/select2.full.min.js}" type="text/javascript"></script>
+
+    <script th:src="@{/static/javascript/plugin/metronic/scripts/app.min.js}" type="text/javascript"></script>
+</body>
+</html>

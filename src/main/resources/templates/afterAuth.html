@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>授权后页面</title>
+</head>
+<body>
+<div>
+    <h3>授权后页面</h3>
+    <div th:object="${callBack}">
+        <a th:text="${callBack.appAuthToken}"></a>
+        <a th:text="${callBack.code}"></a>
+        <a th:text="${callBack.msg}"></a>
+        <a th:text="${callBack.authAppId}"></a>
+        <a th:text="${callBack.appRefreshToken}"></a>
+        <a th:text="${callBack.expiresIn}"></a>
+        <a th:text="${callBack.reExpiresIn}"></a>
+        <a th:text="${callBack.userId}"></a>
+    </div>
+</div>
+
+
+
+<!--[if lt IE 9]>
+<script th:src="@{/static/javascript/plugin/respond.min.js}"></script>
+<script th:src="@{/static/javascript/plugin/excanvas.min.js}"></script>
+<script th:src="@{/static/javascript/plugin/ie8.fix.min.js}"></script>
+<![endif]-->
+<!-- BEGIN CORE PLUGINS -->
+<script th:src="@{/static/javascript/plugin/jquery.min.js}" type="text/javascript"></script>
+<script th:src="@{/static/javascript/plugin/bootstrap/js/bootstrap.min.js}" type="text/javascript"></script>
+<script th:src="@{/static/javascript/plugin/js.cookie.min.js}" type="text/javascript"></script>
+<script th:src="@{/static/javascript/plugin/jquery-slimscroll/jquery.slimscroll.min.js}" type="text/javascript"></script>
+<script th:src="@{/static/javascript/plugin/jquery.blockui.min.js}" type="text/javascript"></script>
+<script th:src="@{/static/javascript/plugin/bootstrap-switch/js/bootstrap-switch.min.js}" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script th:src="@{/static/javascript/plugin/jquery-validation/js/jquery.validate.min.js}" type="text/javascript"></script>
+<script th:src="@{/static/javascript/plugin/jquery-validation/js/additional-methods.min.js}" type="text/javascript"></script>
+<script th:src="@{/static/javascript/plugin/select2/js/select2.full.min.js}" type="text/javascript"></script>
+
+<script th:src="@{/static/javascript/plugin/metronic/scripts/app.min.js}" type="text/javascript"></script>
+</body>
+</html>

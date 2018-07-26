@@ -1,0 +1,25 @@
+server:
+    port: 18080
+    max-http-header-size: 67108864
+
+    tomcat:
+        accesslog:
+          enabled: true
+          buffered: false
+          request-attributes-enabled: true
+          file-date-format: .yyyy-MM-dd
+          pattern: c %A - %l %h %u %t "%r" %s %b "%{Referer}i" "%{User-Agent}i" "%D"
+          prefix: access_log
+          suffix: .log
+
+spring:
+    mvc:
+        static-path-pattern: /static/**
+        favicon:
+          enabled: false
+
+    thymeleaf:
+        cache: false
+        mode: HTML
+        encoding: UTF-8
+
