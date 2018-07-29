@@ -77,6 +77,7 @@ public class TestController {
             authReqBean.setTimestamp(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
 
             AuthRespBean authRespBean = new GetAuthComponent().authByAlibaba(authReqBean, PRIVATEKEY, PUBLICKEY, "UTF-8");
+            // 保存数据操作
             AuthBean authBean = authRespBean.getAlipayOpenAuthTokenAppResponse();
             log.info("app_auth_token:", authBean.getAppAuthToken());
             model.addAttribute("callBack", authBean);
